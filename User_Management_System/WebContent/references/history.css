@@ -1,0 +1,488 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Sarabun', sans-serif;
+    line-height: 1.5;
+    background-color: #f6f5f7;
+}
+
+
+/* ----- Header ----- */
+
+
+@media screen and (max-width: 450px){
+    #main-logo {
+        max-height: 200px;
+        transition: all 200ms ease-in-out;
+    }
+    
+}
+
+@media screen and (max-width: 616px){
+    .header h1 {
+        color: #fff;
+        font-family: 'Lato';
+        font-weight: bold;
+        font-size: 40px;
+        word-spacing: 10px;
+        text-align: center;
+        transition: all 200ms ease-in-out;
+    }
+}
+
+@media screen and (min-width: 617px){
+    .header h1 {
+        color: #fff;
+        font-family: 'Lato';
+        font-weight: bold;
+        font-size: 60px;
+        word-spacing: 12px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 450px){
+    #main-logo {
+        max-height: 300px;
+    }
+
+}
+
+@media screen and (max-width: 995px){
+
+    #main-logo{
+        margin-top: 20%;
+    }
+
+    .header {
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url('../images/background/bkg-history.jpg') center/cover no-repeat fixed;
+        margin-top: auto;
+        height: 650px;
+    }
+}
+
+@media screen and (min-width: 995px){
+
+    .header {
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url('../images/background/bkg-history.jpg') center/cover no-repeat fixed;
+        margin-top: auto;
+        height: 550px;
+    }
+}
+
+
+
+/* ----- Hero ----- */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* ----- EndOfHeader ----- */
+
+
+/* ----- WeRunOnValues ----- */
+
+.values-container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.values-content {
+    margin-top: 10%;
+    padding: 0 5%;
+    color: #fff;
+    font-family: 'Montserrat';
+}
+
+.values-content h1{
+    font-weight: bold;
+}
+
+@media screen and (min-width: 1140px){
+    .values-container img{
+        max-width: 800px;
+    }
+}
+
+@media screen and (max-width: 1140px){
+    .values-container{
+        flex-wrap: wrap;
+        padding-bottom: 5%;
+    }
+
+    .values-container img{
+        width: 100%;
+    }
+}
+
+/* ----- EndofWeRunOnValues ----- */
+
+
+/* ----- Main Values ----- */
+
+.main-values-container {
+    
+    background-color: rgb(43, 49, 53);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding: 5% 8%;
+    padding-top: 8%;
+}
+
+
+
+.values-left-panel h1 {
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Montserrat';
+    font-size: 45px;
+}
+
+.values-right-panel p {
+    color: #fff;
+    font-family: 'Montserrat';
+    font-size: 15px;
+}
+
+
+/* ----- End of Main Values ----- */
+
+
+/* ----- News Brand Media REstaurant Franchising GrowthVision ----- */
+@media screen and (max-width: 450px){
+
+    .values-grid-container {
+        display: grid;
+        padding: 5% 5%;
+        padding-left: 10%;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        /*background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('../images/background/bkg-dark-gray.jpg') center/cover no-repeat fixed;
+        */
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+@media screen and (min-width: 450px){
+
+    .values-grid-container {
+        display: grid;
+        padding: 5% 5%;
+        padding-left: 10%;
+        grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+        /*background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('../images/background/bkg-dark-gray.jpg') center/cover no-repeat fixed;
+        */
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+.values-grid-box {
+    padding: 5%;
+    max-width: 360px;
+    height: 100%;
+    background: (rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
+    box-sizing: border-box;
+    border-radius: 3px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.4), 0 10px 10px rgba(0, 0, 0, 0.4);
+    margin: 25px 0;
+}
+
+.values-grid-box h3 {
+    font-weight: bold;
+    font-family: 'Mali';
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.values-grid-box p {
+    font-family: 'Montserrat';
+    text-align: justify;
+    font-size: 15px;
+}
+
+.values-grid-box span {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.values-grid-box a{
+    
+    color: rgb(11, 110, 146);
+}
+
+
+
+.values-grid-box a:hover {
+    color: rgb(7, 153, 204);
+}
+
+.values-grid-box img {
+    height: 80px;
+}
+
+.values-grid-box i {
+    font-size: 80px;
+    color: rgb(12, 173, 232);
+}
+
+.grid-head {
+    text-align: center;
+}
+
+
+/* ----- End of News Brand Media REstaurant Franchising GrowthVision ----- */
+
+
+
+
+/* ----- HISTORY SECTION ----- */
+
+.history-head {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url('../images/background/bb-cover.jpg') center/cover fixed;
+    margin: 0;
+    height: 800px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media screen and (min-width: 400px){
+    
+    .history-head h1 {
+        font-size: 100px;
+        color: #fff;
+        text-align: center;
+    }
+ 
+}
+
+@media screen and (max-width: 400px){
+    
+    .history-head h1 {
+        font-size: 50px;
+        color: #fff;
+        text-align: center;
+    }
+ 
+}
+
+
+
+/* Universe and RealLife History */
+
+.main-history-container{
+    background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.7)), url('../images/background/bkg-dark-gray.jpg') center/cover no-repeat fixed;
+
+}
+
+.main-history-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+    padding: 3% 3% 0 3%;
+}
+
+.main-history-section p,
+.main-history-section h1 {
+    color: rgb(52, 58, 64);
+}
+
+.history-container {
+    padding-bottom: 3.5%;
+}
+
+.history-container h1 {
+    font-size: 35px;
+    font-family: 'Special Elite';
+}
+
+.history-container p {
+    font-size: 18px;
+    font-family: 'Special Elite';
+}
+
+@media screen and (max-width: 400px){
+    
+    .main-history-section img {
+        border-radius: 5px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2), 0 2px 10px rgba(0, 0, 0, 0.2);
+        width: 300px;
+    }
+ 
+}
+
+
+.history-item-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.history-item-content {
+    margin-top: 3%;
+    padding: 0 5%;
+    color: #fff;
+    font-family: 'Montserrat';
+}
+
+.history-item-container h1{
+    font-weight: bold;
+}
+
+@media screen and (min-width: 1140px){
+    .history-item-container img{
+        max-width: 800px;
+    }
+}
+
+@media screen and (max-width: 1300px){
+    .history-item-container {
+        flex-wrap: wrap;
+        padding-bottom: 5%;
+    }
+
+    .history-item-container img{
+        width: 100%;
+    }
+}
+
+
+.history-container-item{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.main-history-section img {
+    border-radius: 5px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2), 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* ----- LogoHistory ----- */
+
+.history-logo-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 5% 15%;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+}
+
+.history-logo-grid-container p {
+    font-size: 17.5px;
+    font-family: 'Montserrat';
+    color: rgb(52, 58, 64);
+}
+
+.real-history-content {
+    font-size: 17.5px;
+    font-family: 'Montserrat';
+    color: rgb(52, 58, 64);
+    padding: 0 20%;
+    padding-bottom: 2%;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+}
+
+
+/* ----- WATCH ON NETFLIX ----- */
+
+.main-series-container {
+    background-color: rgb(37, 37, 37);
+    display: grid;
+    grid-template-columns: 10% 80%;
+    padding: 5% 0 0 0;
+}
+
+.watch-series-heading {
+    background-color: rgb(37, 37, 37);
+    margin: 0;
+    color: #c0c0c0;
+    text-align: center;
+    padding: 5% 0 0 0;
+    font-family: 'Special Elite';
+    letter-spacing: 1px;
+    word-spacing: 10px;
+    text-transform: uppercase;
+}
+
+.watch-series-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px dotted #c0c0c0;
+    padding-bottom: 5%;
+}
+
+
+@media screen and (min-width: 400px){
+    
+    .watch-series-container img {
+        max-height: 400px;
+        border-radius: 10px;
+        margin-bottom: 50px;
+        margin-left: 70px;
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.4), 0 10px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    
+ 
+}
+
+@media screen and (max-width: 400px){
+    
+    .watch-series-container img {
+        max-height: 300px;
+        border-radius: 10px;
+        margin-bottom: 50px;
+        margin-left: 10%;
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.4), 0 10px 10px rgba(0, 0, 0, 0.4);
+        transition: all 200ms ease-in-out;
+    }
+    
+ 
+}
+
+@media screen and (max-width: 500px){
+    .watch-series-container img{
+        margin-left: 10%;
+        transition: all 200ms ease-in-out;
+    }
+    .watch-series-container {
+        padding-top: 10%;
+        transition: all 200ms ease-in-out;
+    }
+} 
+
+
+.watch-series-container img:hover {
+    transform: scale(1.04, 1.04);
+    transition: all 300ms ease-in-out;
+}
+
+.watch-series-container img:active {
+    transform: scale(1, 1);
+    transition: all 200ms ease-in-out;
+}

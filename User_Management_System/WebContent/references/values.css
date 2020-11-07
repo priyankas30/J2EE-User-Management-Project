@@ -1,0 +1,370 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Sarabun', sans-serif;
+    line-height: 1.5;
+    background-color: #f6f5f7;
+}
+
+
+/* ----- Header ----- */
+
+
+@media screen and (max-width: 450px){
+    #main-logo {
+        max-height: 200px;
+    }
+    .header h1 {
+        color: #fff;
+        font-family: 'Lato';
+        font-weight: bold;
+        font-size: 40px;
+        word-spacing: 10px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 508px){
+
+    #main-logo{
+        margin-top: 20%;
+    }
+
+    .header {
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url('../images/background/bkg-lph-building.jpg') center/cover no-repeat fixed;
+        margin-top: auto;
+        height: 650px;
+    }
+}
+
+
+
+@media screen and (min-width: 450px){
+    #main-logo {
+        max-height: 300px;
+    }
+
+    .header h1 {
+        color: #fff;
+        font-family: 'Lato';
+        font-weight: bold;
+        font-size: 60px;
+        word-spacing: 12px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 510px){
+
+    .header {
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url('../images/background/bkg-lph-building.jpg') center/cover no-repeat fixed;
+        margin-top: auto;
+        height: 550px;
+    }
+}
+
+
+
+
+/* ----- Hero ----- */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* ----- EndOfHeader ----- */
+
+
+/* ----- GoodDoneRight ----- */
+
+.good-done-right {
+    background: white;
+    padding: 0 12%;
+    padding-top: 3%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-column-gap: 10%;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    font-family: 'Montserrat';
+}
+
+.good-done-right h1 {
+    font-size: 45px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+}
+
+@media screen and (min-width: 450px){
+    .good-done-right img {
+     max-height: 400px;
+    }
+}
+
+@media screen and (max-width: 449px){
+    .good-done-right img {
+     max-height: 200px;
+     margin-left: 15%;
+    }
+}
+
+.good-done-right p {
+    font-size: 16px;
+    padding-bottom: 30px;
+}
+
+
+/* ----- EndofGoodDoneRight ----- */
+
+
+/* ----- Main Values ----- */
+
+.main-values-container {
+    background: rgb(163, 37, 57);
+    padding: 8% 15%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.main-values-container .values-left-panel {
+    width: 70%;
+}
+
+.values-left-panel h1 {
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Montserrat';
+    font-size: 40px;
+}
+
+.values-right-panel p {
+    color: #fff;
+    font-family: 'Montserrat';
+    font-size: 15px;
+}
+
+
+/* ----- End of Main Values ----- */
+
+
+/* ----- Food People Footprint ----- */
+@media screen and (max-width: 450px){
+
+    .values-grid-container {
+        display: grid;
+        padding: 5% 5%;
+        padding-left: 10%;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        /*background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('../images/background/bkg-dark-gray.jpg') center/cover no-repeat fixed;
+        */
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+@media screen and (min-width: 450px){
+
+    .values-grid-container {
+        display: grid;
+        padding: 5% 5%;
+        padding-left: 10%;
+        grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+        /*background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('../images/background/bkg-dark-gray.jpg') center/cover no-repeat fixed;
+        */
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+.values-grid-box {
+    padding: 5%;
+    max-width: 360px;
+    height: 100%;
+    background: (rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
+    box-sizing: border-box;
+    border-radius: 3px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.4), 0 10px 10px rgba(0, 0, 0, 0.4);
+    margin: 25px 0;
+}
+
+.values-grid-box h3 {
+    font-weight: bold;
+    font-family: 'Mali';
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.values-grid-box p {
+    font-family: 'Montserrat';
+    text-align: justify;
+    font-size: 15px;
+}
+
+.values-grid-box span {
+    font-weight: bold;
+    font-size: 15;
+}
+.values-grid-box a{
+    
+    color: rgb(11, 110, 146);
+}
+
+.values-grid-box a:hover {
+    color: rgb(7, 153, 204);
+}
+
+.values-grid-box img {
+    height: 80px;
+}
+
+.values-grid-box i {
+    font-size: 80px;
+    color: rgb(12, 173, 232);
+}
+
+.grid-head {
+    text-align: center;
+}
+
+
+/* ----- End of Food People Footprint ----- */
+
+
+/* ----- Adoption Container ----- */
+
+.adoption-container {
+    background: url('../images/background/bkg-adoption.jpg') center/cover no-repeat;
+    height: 100%;
+}
+
+.adoption-container-content {
+    width: 100%;
+    font-family: 'Montserrat';
+    padding: 10%;
+    color: #fff;
+}
+
+@media screen and (min-width: 1200px){
+    
+    .adoption-container button {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    
+    .adoption-container button {
+        width: 30%;
+    }
+}
+
+button:active{
+    transform: scale(0.98);
+    transition: all 150ms ease-in-out;
+}
+
+@media screen and (min-width: 600px){
+    .adoption-container-content h1 {
+        font-weight: bold;
+        font-size: 40px;
+        width: 40%;
+    }
+    
+    .adoption-container-content p {
+        font-size: 15px;
+        width: 45%;
+    }
+
+}
+
+@media screen and (max-width: 600px){
+    .adoption-container-content h1 {
+        font-weight: bold;
+        font-size: 40px;
+        width: 90%;
+        color: black;
+    }
+    
+    .adoption-container-content p {
+        font-size: 15px;
+        width: 90%;
+        color: black;
+    }
+
+    .adoption-container button {
+        width: 50%;
+    }
+
+}
+
+
+.adoption-container button {
+    padding: 8px 10px;
+    font-size: 20px;
+    background-color: rgb(7, 153, 204);
+    border-radius: 5px;
+    font-family: 'Segoe UI';
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+}
+
+.adoption-container button:hover {
+    background-color: rgb(24, 107, 140);
+}
+
+
+/* ----- End of Adoption Container ----- */
+
+
+/* ----- Commitment ----- */
+
+.commitment-grid-container {
+    padding: 5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+}
+
+.commitment-grid-container img {
+    border-radius: 50%;
+    height: 135px;
+}
+
+.commitment-section {
+    text-align: center;
+    padding: 3% 0;
+}
+
+.commitment-section h1 {
+    font-size: 40px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+}
+
+.commitment-section p {
+    font-size: 18px;
+}
+
+.commitment-grid-container p {
+    font-size: 14px;
+    margin: 0 5%;
+    font-family: 'Montserrat';
+}

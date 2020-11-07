@@ -1,0 +1,469 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Sarabun', sans-serif;
+    line-height: 1.5;
+}
+
+
+/* ----- Header ----- */
+@media screen and (max-width: 450px){
+
+    #main-logo {
+        max-height: 200px;
+        margin-top: 40%;
+    }
+}
+
+
+@media screen and (min-width: 450px){
+
+    #main-logo {
+        max-height: 300px;
+        margin-top: 40%;
+    }
+}
+
+
+
+
+.header {
+    height: 80vh;
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.9));
+    margin-top: auto;
+    height: 100vh;
+}
+
+
+/* ----- Hero ----- */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* ----- SearchBar ----- */
+
+.searchbar {
+    margin-bottom: auto;
+    margin-top: auto;
+    height: 60px;
+    background-color: #353b48;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.search_input {
+    color: white;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    caret-color: transparent;
+    line-height: 40px;
+    transition: width 0.4s linear;
+}
+
+.searchbar:hover>.search_input {
+    padding: 0 10px;
+    width: 300px;
+    caret-color: red;
+    transition: width 0.4s linear;
+}
+
+.searchbar:hover>.search_icon {
+    background: white;
+    color: #e74c3c;
+    text-decoration: none;
+}
+
+.search_icon {
+    height: 40px;
+    width: 40px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+}
+
+
+/* ----- EndOfHeader ----- */
+
+
+/* ----- WhatWeDo ----- */
+
+
+/* ----- WhyLPH ----- */
+
+.role {
+    background-color: rgb(52, 58, 64);
+    border-top: 1px dotted #c0c0c0;
+    padding: 50px 10%;
+}
+
+.role h1 {
+    color: #c0c0c0;
+    font-weight: bold;
+    font-size: 45px;
+}
+
+.role p {
+    color: #fff;
+    font-size: 17px;
+    width: 80%;
+    font-family: 'Montserrat';
+}
+
+
+/* ----- LPH Video ----- */
+
+#lph-video {
+    margin-top: 5px;
+    width: 100%;
+    outline: none;
+}
+
+.video-grid-container {
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+}
+
+
+/* ----- Invesment & Franchising ----- */
+
+.wwd-container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    grid-column-gap: 2px;
+    margin: 1px 1%;
+    padding-bottom: 1%;
+    color: #fff;
+}
+
+.wwd-container .wwd-franchise {
+    background: linear-gradient(#82a662, #82a662), url('../images/background/bkg-image4.jpg') no-repeat center/cover;
+    text-align: center;
+    background-blend-mode: multiply;
+    border-radius: 5px;
+}
+
+.wwd-invesment {
+    background: linear-gradient(#626ba6, #626ba6), url('../images/background/invesment.jpg') no-repeat center/cover;
+    text-align: center;
+    background-blend-mode: multiply;
+    border-radius: 5px;
+}
+
+.wwd-container button {
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: rgb(7, 153, 204);
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Segoe UI';
+    border: none;
+    outline: none;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.wwd-container button:hover {
+    background-color: rgb(24, 107, 140);
+}
+
+.wwd-content {
+    text-align: center;
+    margin: 6%;
+}
+
+.wwd-content h1 {
+    font-size: 35px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.wwd-content h5 {
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+}
+
+.wwd-content p {
+    font-size: 20px;
+    font-family: 'Montserrat';
+}
+
+
+/* ----- EndOfWhatWeDo --- */
+
+
+/* ----- ChickenSandwich ----- */
+
+.chicken-sandwich {
+    background: url('../images/menu/chicken-sandwich.png') center/cover;
+    font-family: 'Viga';
+    padding: 5em 0;
+    display: flex;
+    text-align: end;
+    justify-content: space-around;
+}
+
+.chicken-sandwich h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.chicken-sandwich-content {
+   width: 50%;  
+}
+
+
+/* ----- EndOfChickenSandwich ----- */
+
+
+/* ----- MenuSection ----- */
+
+
+/* ----- EndOfMenuSection ----- */
+
+.clear {
+    clear: both;
+}
+
+
+/* ----- SpicyChicken ----- */
+
+.spicy-chicken {
+    font-family: 'Viga';
+    background: url('../images/menu/spicy-chicken.png') center/cover no-repeat;
+}
+
+.spicy-chicken-content {
+    margin-top: 100px;
+    margin-left: 150px;
+    width: 40%;
+}
+
+.spicy-chicken-content h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.spicy-chicken button {
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: rgb(7, 153, 204);
+    width: 70%;
+    font-family: 'Segoe UI';
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.spicy-chicken button:hover {
+    background-color: rgb(24, 107, 140);
+}
+
+
+/* ----- SpicyChicken ----- */
+
+
+/* ----- GustavoSection ----- */
+
+.menu {
+    max-width: 100%;
+}
+
+.menu-image {
+    background: url('../images/background/bkg-image.jpg') center/cover fixed no-repeat;
+}
+
+.menu-text {
+    align-items: center;
+    background: orange;
+}
+
+
+.menu-text h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.menu-text p {
+    font-family: 'Carter One';
+    font-size: 25px;
+    padding: 1em;
+    padding-right: 3em;
+}
+
+.menu-text a {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 35%;
+    margin-left: 20px;
+    padding: 13px 30px;
+    border-radius: 200px;
+    font-weight: bold;
+    background: rgb(10, 10, 10);
+    color: orange;
+    border: none;
+    text-align: center;
+}
+
+.menu-text a:hover {
+    background: #fff;
+    text-decoration: none;
+    color: orange;
+}
+
+@media screen and (min-width: 1200px) {
+    .menu {
+        display: flex;
+        width: 100%;
+        height: 705px;
+    }
+    .menu-text {
+        flex: 0 0 30%;
+    }
+    .menu-image {
+        flex: 0 0 70%;
+        clip-path: polygon(0 0, 100% 0, 55% 100%, 0 100%);
+    }
+    .menu {
+        background: orange;
+    }
+}
+
+@media screen and (max-width: 1478.5px){
+    #gustavo-image {
+        position: relative;
+        height: 350px;
+        transform: translate(-110%, -56.8%);
+    }
+    
+}
+
+@media screen and (min-width: 1478.5px){
+    #gustavo-image {
+        position: relative;
+        height: 350px;
+        transform: translate(-100%, -46.5%);
+    }
+}
+
+@media screen and (max-width: 1200px){
+    #gustavo-image {
+        position: relative;
+        height: 350px;
+        transform: translate(0, 0);
+    }
+}
+
+@media screen and (max-width: 450px){
+    #gustavo-image {
+        position: relative;
+        max-height: 250px;
+        transform: translate(0, 0);
+    }
+    .menu-text a{
+        width: 50%;
+    }
+}
+
+
+@media screen and (max-width: 300px){
+    #gustavo-image {
+        position: relative;
+        max-height: 170px;
+        transform: translate(0, 0);
+    }
+    
+    .menu-text a{
+        width: 80%;
+    }
+    
+}
+
+
+
+/* ----- EndofGustavoSection ----- */
+
+
+/* ----- NutritionSection ----- */
+
+.nutrition-section {
+    padding-top: 3em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    text-align: center;
+    margin: 1%;
+}
+
+.nutrition-section h1 {
+    font-size: 50px;
+    font-family: 'Viga';
+    margin-top: 3em;
+}
+
+.nutrition-section img {
+    width: 100%;
+    border-radius: 3px;
+}
+
+.nutrition-section p {
+    font-family: 'Lato';
+    font-size: 19px;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.nutrition-content button {
+    padding: 10px 20px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Segoe UI';
+    background-color: rgb(7, 153, 204);
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.nutrition-content button:hover {
+    background-color: rgb(24, 107, 140);
+}
+
+
+button:active {
+    transform: scale(0.98);
+    transition: all 150ms ease-in-out;
+}
+
+.copyright-sprite {
+    font-size: 17px;
+    margin: 5% 10%;
+    text-align: center;
+}
+
+
+/* ----- EndOfNutritionSection ----- */
